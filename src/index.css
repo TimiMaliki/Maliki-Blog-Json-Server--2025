@@ -1,0 +1,154 @@
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    /* font-size: var(--normal-font-size); */
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  i{
+    cursor: pointer;
+   font-size: 22px;
+  }
+  
+  
+  /*========== LAYOUT ==========*/
+  .bd-container{
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+  }
+  
+  .l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+  }
+  
+  /*========== NAV ==========*/
+  .nav{
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 768px){
+    .nav__menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem 0 1rem;
+      text-align: center;
+      background-color: var(--body-color);
+      transition: .4s;
+      box-shadow: 0 4px 4px rgba(0,0,0,.1);
+      border-radius: 0 0 1rem 1rem;
+      z-index: var(--z-fixed);
+    }
+  }
+  
+  .nav__item{
+    margin-bottom: var(--mb-2);
+  }
+  
+  .nav__link, .nav__logo, .nav__toggle{
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+  }
+  
+  .nav__logo:hover{
+    color: var(--first-color);
+  }
+  
+  .nav__link{
+    transition: .3s;
+  }
+  
+  .nav__link:hover{
+    color: var(--first-color);
+  }
+  
+  .nav__toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  /* Show menu */
+  .show-menu{
+    top: var(--header-height);
+  }
+  
+  /* Active menu */
+  .active-link{
+    color: var(--first-color-alt);
+  }
+  
+  /* Change background header */
+  .scroll-header{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+  
+  /* Scroll top */
+  .scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: #7CB9E8;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+  }
+  
+  .scrolltop:hover{
+    background-color: var(--first-color-alt);
+  }
+  
+  .scrolltop__icon{
+    font-size: 1.8rem;
+    color: var(--body-color);
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+  }
+  
+  
+  
+  
+  /*====== BRAND =======*/
+  .brand{
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      font-size: 24px;
+      font-weight: 700;
+  }
+  
+  
+  
+  
