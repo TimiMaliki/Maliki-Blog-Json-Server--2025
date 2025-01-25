@@ -16,7 +16,7 @@ const renderDetails  = async () => {
   class="w-full h-full lg:h-[900px] object-contain"
 />
 
-<div class="flex text-xl text-black justify-center p-20">
+<div class="flex text-xl text-black justify-center p-10 lg:p-20">
      <p>
      ${post.BODY}
      </p>
