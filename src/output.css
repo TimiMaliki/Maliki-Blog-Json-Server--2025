@@ -911,17 +911,29 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-\[42px\] {
+    height: 42px;
+  }
   .h-\[300px\] {
     height: 300px;
   }
   .h-\[30px\] {
     height: 30px;
   }
+  .h-\[35px\] {
+    height: 35px;
+  }
+  .h-\[39px\] {
+    height: 39px;
+  }
   .h-\[400px\] {
     height: 400px;
   }
   .h-\[500px\] {
     height: 500px;
+  }
+  .h-\[50px\] {
+    height: 50px;
   }
   .h-full {
     height: 100%;
@@ -2888,6 +2900,11 @@
   .lg\:grid {
     @media (width >= 64rem) {
       display: grid;
+    }
+  }
+  .lg\:h-\[50px\] {
+    @media (width >= 64rem) {
+      height: 50px;
     }
   }
   .lg\:h-\[900px\] {
