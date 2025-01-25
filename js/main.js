@@ -99,52 +99,53 @@ const displayPosts = async () => {
   data.forEach(post => {
  template += `
         
- <div class="blog-one p-5  lg:p-24">
- <div
-   class=" w-[200px] lg:w-full h-full lg:h-full border border-gray-200 rounded-2xl shadow  bg-slate-100"
- >
-   <a href="#">
-     <img
-       class="rounded-t-lg"
-       src=${post.image}
-       alt=""
-     />
-   </a>
-   <div class="lg:p-15">
-     <a href="#">
-       <h5
-         class="mb-2  text-lg lg:text-2xl  text-center font-bold tracking-tight text-slate-300 dark:text-black p-10"
-       >
-         ${post.Header}
-       </h5>
-     </a>
-     <p class="mb-1 text-wrap  text-center text-md font-normal text-gray-700 dark:text-gray-400">
-      ${post.text}
-     </p>
-
-   <div class=" flex justify-center p-10">
-   <button
-   type="button"
-   class="w-[70px] h-[24px] lg:w-full lg:h-full text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
- >
- <a href="./details.html?id=${post.id}" class=""
- >ReadMore</a>
-
-</button>
- 
-
-
-<button
-type="button"
-class="w-[70px] h-[24px] lg:w-full lg:h-full text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
->
-<a href="./becomeABlogger.html">Not Free</a>
-</button>
-   </div>
-   
-   </div>     
- </div>
+ <div class="blog-one p-2 lg:p-12">
+  <div
+    class="max-w-sm lg:max-w-full mx-auto border border-gray-200 rounded-2xl shadow-lg bg-slate-100"
+  >
+    <a href="#">
+      <img
+        class="rounded-t-2xl w-full h-48 object-cover"
+        src="${post.image}"
+        alt="${post.Header}"
+      />
+    </a>
+    <div class="p-0">
+      <a href="#">
+        <h5
+          class="mb-4 text-lg md:text-xl lg:text-2xl text-center font-bold tracking-tight text-gray-800"
+        >
+          ${post.Header}
+        </h5>
+      </a>
+      <p
+        class="mb-6 text-sm md:text-base text-center text-gray-700"
+      >
+        ${post.text}
+      </p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-2 lg:mb-4">
+      <!-- Read More Button -->
+      <a
+        href="./details.html?id=${post.id}"
+        class="w-auto text-center text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-xs sm:text-sm px-4 py-2"
+      >
+        Read More
+      </a>
+      <!-- Not Free Button -->
+      <a
+        href="./becomeABlogger.html"
+        class="w-auto text-center mb-4 lg:mb-0 text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-xs sm:text-sm px-4 py-2"
+      >
+        Not Free
+      </a>
+    </div>
+    
+       
+      </div>
+    </div>
+  </div>
 </div>
+
  
  
  `
