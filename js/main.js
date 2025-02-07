@@ -105,7 +105,7 @@ const displayPosts = async () => {
   >
     <a href="#">
       <img
-        class="rounded-t-2xl w-full h-48 object-cover"
+        class="rounded-t-2xl w-full h-full object-cover"
         src="${post.image}"
         alt="${post.Header}"
       />

@@ -108,17 +108,19 @@ const createPost = async (e) => {
             },
             body: JSON.stringify(posts),
         });
-
         if (response.ok) {
             alert('Post created successfully!');
-            window.location.replace("/index.html");
+            window.location.replace("./index.html");
         } else {
             alert('Failed to create post.');
         }
+      
     } catch (error) {
         console.error('Error:', error);
         alert('An error occurred while creating the post.');
     }
+
+   
 };
 
 form.addEventListener("submit", createPost);

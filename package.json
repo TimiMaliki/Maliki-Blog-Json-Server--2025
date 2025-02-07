@@ -3,6 +3,7 @@
     "@tailwindcss/cli": "^4.0.0",
     "cors": "^2.8.5",
     "g": "^2.0.1",
+    "json-serve": "^0.1.0",
     "json-server": "^1.0.0-beta.3",
     "milliparsec": "^3.0.0",
     "tailwindcss": "^4.0.0"
